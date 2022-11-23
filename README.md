@@ -35,15 +35,15 @@ Be sure to check out Apple's [SwiftUI View Fundamentals](https://developer.apple
 > If you'd like to contribute, feel free to fork the repo, add your code, and make a pull request.
 > If everything looks good, your code may just make it into the project!
   
-AngularGradient  
-AnyShape  
-AnyView  
-AsyncImage  
-Button  
-Canvas  
-Capsule  
-Circle  
-Color  
+[AngularGradient](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/AngularGradient)  
+[AnyShape](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/AnyShape)  
+[AnyView](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/AnyView)  
+[AsyncImage](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/AsyncImage)  
+[Button](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Button)  
+[Canvas](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Canvas)  
+[Capsule](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Capsule)  
+[Circle](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Circle)  
+[Color](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Color)  
 ColorPicker  
 ContainerRelativeShape  
 ControlGroup  
