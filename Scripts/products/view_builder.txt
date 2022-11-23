@@ -1,0 +1,188 @@
+    @ViewBuilder
+    func view() -> some View {
+        switch type {
+        case .AngularGradient:
+            AngularGradientDemoView()
+        case .AnyShape:
+            AnyShapeDemoView()
+        case .AnyView:
+            AnyViewDemoView()
+        case .AsyncImage:
+            AsyncImageDemoView()
+        case .Button:
+            ButtonDemoView()
+        case .Canvas:
+            CanvasDemoView()
+        case .Capsule:
+            CapsuleDemoView()
+        case .Circle:
+            CircleDemoView()
+        case .Color:
+            ColorDemoView()
+        case .ColorPicker:
+            ColorPickerDemoView()
+        case .ContainerRelativeShape:
+            ContainerRelativeShapeDemoView()
+        case .ControlGroup:
+            ControlGroupDemoView()
+        case .DatePicker:
+            DatePickerDemoView()
+        case .DefaultDateProgressLabel:
+            DefaultDateProgressLabelDemoView()
+        case .DefaultShareLinkLabel:
+            DefaultShareLinkLabelDemoView()
+        case .DisclosureGroup:
+            DisclosureGroupDemoView()
+        case .Divider:
+            DividerDemoView()
+        case .EditButton:
+            EditButtonDemoView()
+        case .EditableCollectionContent:
+            EditableCollectionContentDemoView()
+        case .Ellipse:
+            EllipseDemoView()
+        case .EllipticalGradient:
+            EllipticalGradientDemoView()
+        case .EmptyView:
+            EmptyViewDemoView()
+        case .EquatableView:
+            EquatableViewDemoView()
+        case .ForEach:
+            ForEachDemoView()
+        case .Form:
+            FormDemoView()
+        case .Gauge:
+            GaugeDemoView()
+        case .GeometryReader:
+            GeometryReaderDemoView()
+        case .Grid:
+            GridDemoView()
+        case .GridRow:
+            GridRowDemoView()
+        case .Group:
+            GroupDemoView()
+        case .GroupBox:
+            GroupBoxDemoView()
+        case .HSplitView:
+            HSplitViewDemoView()
+        case .HStack:
+            HStackDemoView()
+        case .Image:
+            ImageDemoView()
+        case .Label:
+            LabelDemoView()
+        case .LabeledContent:
+            LabeledContentDemoView()
+        case .LabeledControlGroupContent:
+            LabeledControlGroupContentDemoView()
+        case .LabeledToolbarItemGroupContent:
+            LabeledToolbarItemGroupContentDemoView()
+        case .LazyHGrid:
+            LazyHGridDemoView()
+        case .LazyHStack:
+            LazyHStackDemoView()
+        case .LazyVGrid:
+            LazyVGridDemoView()
+        case .LazyVStack:
+            LazyVStackDemoView()
+        case .LinearGradient:
+            LinearGradientDemoView()
+        case .Link:
+            LinkDemoView()
+        case .List:
+            ListDemoView()
+        case .Menu:
+            MenuDemoView()
+        case .MenuButton:
+            MenuButtonDemoView()
+        case .ModifiedContent:
+            ModifiedContentDemoView()
+        case .MultiDatePicker:
+            MultiDatePickerDemoView()
+        case .NavigationLink:
+            NavigationLinkDemoView()
+        case .NavigationSplitView:
+            NavigationSplitViewDemoView()
+        case .NavigationStack:
+            NavigationStackDemoView()
+        case .NavigationView:
+            NavigationViewDemoView()
+        case .OffsetShape:
+            OffsetShapeDemoView()
+        case .OutlineGroup:
+            OutlineGroupDemoView()
+        case .OutlineSubgroupChildren:
+            OutlineSubgroupChildrenDemoView()
+        case .PasteButton:
+            PasteButtonDemoView()
+        case .Path:
+            PathDemoView()
+        case .Picker:
+            PickerDemoView()
+        case .PresentedWindowContent:
+            PresentedWindowContentDemoView()
+        case .ProgressView:
+            ProgressViewDemoView()
+        case .RadialGradient:
+            RadialGradientDemoView()
+        case .Rectangle:
+            RectangleDemoView()
+        case .RenameButton:
+            RenameButtonDemoView()
+        case .RotatedShape:
+            RotatedShapeDemoView()
+        case .RoundedRectangle:
+            RoundedRectangleDemoView()
+        case .ScaledShape:
+            ScaledShapeDemoView()
+        case .ScrollView:
+            ScrollViewDemoView()
+        case .ScrollViewReader:
+            ScrollViewReaderDemoView()
+        case .Section:
+            SectionDemoView()
+        case .SecureField:
+            SecureFieldDemoView()
+        case .ShareLink:
+            ShareLinkDemoView()
+        case .Slider:
+            SliderDemoView()
+        case .Spacer:
+            SpacerDemoView()
+        case .Stepper:
+            StepperDemoView()
+        case .SubscriptionView:
+            SubscriptionViewDemoView()
+        case .TabView:
+            TabViewDemoView()
+        case .Table:
+            TableDemoView()
+        case .Text:
+            TextDemoView()
+        case .TextEditor:
+            TextEditorDemoView()
+        case .TextField:
+            TextFieldDemoView()
+        case .TextFieldLink:
+            TextFieldLinkDemoView()
+        case .TimelineView:
+            TimelineViewDemoView()
+        case .Toggle:
+            ToggleDemoView()
+        case .TransformedShape:
+            TransformedShapeDemoView()
+        case .TupleView:
+            TupleViewDemoView()
+        case .VSplitView:
+            VSplitViewDemoView()
+        case .VStack:
+            VStackDemoView()
+        case .ViewThatFits:
+            ViewThatFitsDemoView()
+        case .ZStack:
+            ZStackDemoView()
+
+        default:
+            Text("Missing Demo View: \(type.rawValue)")
+        }
+    }

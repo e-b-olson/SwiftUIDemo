@@ -1,0 +1,8 @@
+    @ViewBuilder
+    func view() -> some View {
+        switch type {
+{{ case }}
+        default:
+            Text("Missing Demo View: \(type.rawValue)")
+        }
+    }

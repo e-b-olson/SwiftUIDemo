@@ -1,0 +1,38 @@
+name: SwiftUIDemo
+options:
+  bundleIdPrefix: com.YOURBUNDLEIDHERE
+targets:
+  SwiftUIDemo:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.5"
+    sources: [SwiftUIDemo]
+    settings:
+      base:
+        DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+        MARKETING_VERSION: 0.0.0
+        CURRENT_PROJECT_VERSION: 0
+    info:
+      path: "./SwiftUIDemo/Info.plist"
+      properties:
+        PHPhotoLibraryPreventAutomaticLimitedAccessAlert: false
+        NSPhotoLibraryUsageDescription: "The app needs access to your photo library."
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen:
+          UIColorName: LaunchScreen-Background
+          UIImageName: LaunchScreen-Image
+    scheme:
+      testTargets:
+        - SwiftUIDemoTests
+        - SwiftUIDemoUITests
+  SwiftUIDemoTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources: [SwiftUIDemoTests]
+  SwiftUIDemoUITests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources: [SwiftUIDemoUITests]
