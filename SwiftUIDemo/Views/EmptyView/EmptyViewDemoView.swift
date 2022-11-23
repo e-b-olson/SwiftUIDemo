@@ -10,8 +10,7 @@ import SwiftUI
 struct EmptyViewDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(EmptyViewDemoView)")
+        EmptyView()
     }
 }
 

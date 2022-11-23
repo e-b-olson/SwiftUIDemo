@@ -10,8 +10,8 @@ import SwiftUI
 struct TextDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(TextDemoView)")
+        Text("Text views are used to display text :)")
+            .multilineTextAlignment(.center)
     }
 }
 
