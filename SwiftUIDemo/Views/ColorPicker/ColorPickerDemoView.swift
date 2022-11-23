@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ColorPickerDemoView: View {
+    @State var color: Color = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(ColorPickerDemoView)")
+        ColorPicker("ColorPicker Example", selection: $color)
     }
 }
 
