@@ -1,5 +1,10 @@
 # SwiftUIDemo
 This is just a simple app to explore all the default SwiftUI views provided by Apple.
+
+**Main App** | **Demo View**
+:---------:|:---------:
+![SwiftUIDemo_MainApp](https://user-images.githubusercontent.com/113631682/203643829-8308c1d0-47a8-4225-aa7d-a33c7cc1a973.jpg) | ![SwiftUIDemo_AngularGradient](https://user-images.githubusercontent.com/113631682/203643859-16fea30f-4a16-43a1-85fe-04111c8c062f.jpg)
+
   
 ## Motivation
 
