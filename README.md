@@ -61,7 +61,7 @@ EditButton
 EditableCollectionContent  
 Ellipse  
 EllipticalGradient  
-EmptyView  
+[EmptyView](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EmptyView)  
 EquatableView  
 ForEach  
 Form  
@@ -118,7 +118,7 @@ Stepper
 SubscriptionView  
 TabView  
 Table  
-Text  
+[Text](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Text)  
 TextEditor  
 TextField  
 TextFieldLink  
