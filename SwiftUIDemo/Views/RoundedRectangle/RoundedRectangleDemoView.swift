@@ -10,8 +10,7 @@ import SwiftUI
 struct RoundedRectangleDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(RoundedRectangleDemoView)")
+        RoundedRectangle(cornerRadius: 16, style: .continuous)
     }
 }
 

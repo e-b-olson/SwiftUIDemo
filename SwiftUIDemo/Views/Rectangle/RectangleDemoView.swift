@@ -10,8 +10,7 @@ import SwiftUI
 struct RectangleDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(RectangleDemoView)")
+        Rectangle()
     }
 }
 
