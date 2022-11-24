@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct DatePickerDemoView: View {
+    @State var date: Date = Date()
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(DatePickerDemoView)")
+        DatePicker("DatePicker Example", selection: $date, displayedComponents: [.date])
+            .datePickerStyle(.graphical)
     }
 }
 
