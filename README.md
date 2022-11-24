@@ -49,10 +49,10 @@ Be sure to check out Apple's [SwiftUI View Fundamentals](https://developer.apple
 [Capsule](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Capsule)  
 [Circle](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Circle)  
 [Color](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Color)  
-ColorPicker  
+[ColorPicker](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/ColorPicker)  
 ContainerRelativeShape  
 ControlGroup  
-DatePicker  
+[DatePicker](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DatePicker)  
 DefaultDateProgressLabel  
 DefaultShareLinkLabel  
 DisclosureGroup  
