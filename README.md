@@ -102,10 +102,10 @@ Picker
 PresentedWindowContent  
 ProgressView  
 RadialGradient  
-Rectangle  
+[Rectangle](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Rectangle)  
 RenameButton  
 RotatedShape  
-RoundedRectangle  
+[RoundedRectangle](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/RoundedRectangle)  
 ScaledShape  
 ScrollView  
 ScrollViewReader  
