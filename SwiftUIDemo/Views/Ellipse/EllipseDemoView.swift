@@ -10,8 +10,7 @@ import SwiftUI
 struct EllipseDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(EllipseDemoView)")
+        Ellipse()
     }
 }
 
