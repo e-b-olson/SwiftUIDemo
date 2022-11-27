@@ -59,8 +59,8 @@ DisclosureGroup
 Divider  
 EditButton  
 EditableCollectionContent  
-Ellipse  
-EllipticalGradient  
+[Ellipse](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Ellipse)  
+[EllipticalGradient](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EllipticalGradient)  
 [EmptyView](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EmptyView)  
 EquatableView  
 ForEach  
