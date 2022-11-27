@@ -10,8 +10,7 @@ import SwiftUI
 struct EllipticalGradientDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(EllipticalGradientDemoView)")
+        EllipticalGradient(gradient: .init(colors: [.blue, .green]))
     }
 }
 
