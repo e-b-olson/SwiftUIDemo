@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContainerRelativeShapeDemoView: View {
     
+//    init() {
+//        UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
+//    }
+    
     var body: some View {
-        Text("Placeholder View")
-        Text("(ContainerRelativeShapeDemoView)")
+        ContainerRelativeShape()
+            .inset(by: 32)
     }
 }
 

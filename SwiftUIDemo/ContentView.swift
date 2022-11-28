@@ -10,6 +10,14 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
     
+    init() {
+        /*
+         The goal here is to prevent the navigation title from
+         truncating (...) the longer titles.
+         */
+        UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
+    }
+    
     var body: some View {
         NavigationView {
             List(ContentViewModel.ViewType.allCases, id: \.rawValue) { type in
@@ -20,8 +28,8 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("SwifUI Demo")
+            .navigationBarTitleDisplayMode(.large)
         }
-        .navigationBarTitleDisplayMode(.large)
     }
 }
 
