@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct DisclosureGroupDemoView: View {
+    @State private var isExpanded: Bool = false
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(DisclosureGroupDemoView)")
+        DisclosureGroup("Disclosure Group", isExpanded: $isExpanded) {
+            Text("You opened the Disclosure Group!")
+        }
     }
 }
 
