@@ -56,9 +56,9 @@ Be sure to check out Apple's [SwiftUI View Fundamentals](https://developer.apple
 DefaultDateProgressLabel  
 DefaultShareLinkLabel  
 [DisclosureGroup](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DisclosureGroup)  
-Divider  
+[Divider](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Divider)  
 EditButton  
-EditableCollectionContent  
+[EditableCollectionContent](https://github.com/e-b-olson/SwiftUIDemo/blob/main/SwiftUIDemo/Views/EditableCollectionContent/EditableCollectionContentDemoView.swift)  
 [Ellipse](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Ellipse)  
 [EllipticalGradient](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EllipticalGradient)  
 [EmptyView](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EmptyView)  
