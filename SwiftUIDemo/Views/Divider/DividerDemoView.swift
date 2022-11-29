@@ -10,8 +10,7 @@ import SwiftUI
 struct DividerDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(DividerDemoView)")
+        Divider()
     }
 }
 
