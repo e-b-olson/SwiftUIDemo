@@ -10,8 +10,11 @@ import SwiftUI
 struct ControlGroupDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(ControlGroupDemoView)")
+        ControlGroup {
+            Button("Button 1", action: {})
+            Button("Button 2", action: {})
+            Button("Button 3", action: {})
+        }
     }
 }
 
