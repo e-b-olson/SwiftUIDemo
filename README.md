@@ -51,11 +51,11 @@ Be sure to check out Apple's [SwiftUI View Fundamentals](https://developer.apple
 [Color](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Color)  
 [ColorPicker](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/ColorPicker)  
 [ContainerRelativeShape](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/ContainerRelativeShape)  
-ControlGroup  
+[ControlGroup](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/ControlGroup)  
 [DatePicker](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DatePicker)  
 DefaultDateProgressLabel  
 DefaultShareLinkLabel  
-DisclosureGroup  
+[DisclosureGroup](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DisclosureGroup)  
 Divider  
 EditButton  
 EditableCollectionContent  
