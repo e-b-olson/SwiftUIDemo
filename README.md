@@ -67,9 +67,9 @@ ForEach
 [Form](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Form)  
 [Gauge](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Gauge)  
 [GeometryReader](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/GeometryReader)  
-Grid  
-GridRow  
-Group  
+[Grid](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Grid)  
+[GridRow](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/GridRow)  
+[Group](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Group)  
 GroupBox  
 HSplitView  
 HStack  
