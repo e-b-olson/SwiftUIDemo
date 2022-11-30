@@ -22,6 +22,9 @@ struct GridRowDemoView: View {
                 GridRow {
                     Color.clear //<-- Use Color.clear to create an empty cell
                         .gridCellUnsizedAxes([.horizontal, .vertical])
+                        // ^^^ this is needed to prevent the Color view from taking more
+                        //     space than the other cells in this row.  Use this modifier
+                        //     on all "greedy" views (Spacer, GeometryReader, etc.)
                     ForEach(1..<4) { column in
                         Text("C\(column)")
                     }
