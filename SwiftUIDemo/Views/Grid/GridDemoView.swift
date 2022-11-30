@@ -10,8 +10,27 @@ import SwiftUI
 struct GridDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(GridDemoView)")
+        /*
+         This code is taken from Apple's documentation
+         https://developer.apple.com/documentation/swiftui/grid
+         
+         Note: Grid is only available in iOS 16.0+
+         */
+        if #available(iOS 16, *) {
+            Grid {
+                GridRow {
+                    Text("Hello")
+                    Image(systemName: "globe")
+                }
+                GridRow {
+                    Image(systemName: "hand.wave")
+                    Text("World")
+                }
+            }
+        } else {
+            Text("Placeholder View")
+            Text("(GridDemoView only available in iOS 16+)")
+        }
     }
 }
 
