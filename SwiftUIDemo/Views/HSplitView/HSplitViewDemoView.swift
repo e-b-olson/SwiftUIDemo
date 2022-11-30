@@ -10,8 +10,16 @@ import SwiftUI
 struct HSplitViewDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(HSplitViewDemoView)")
+        /*
+         Note: HSplitView is only available in macOS (10.15+)
+         */
+        GroupBox {
+            Text("HSplitView is currently only available in macOS.")
+        } label: {
+            Label("HSplitView", systemImage: "info.circle")
+                .foregroundColor(Color.blue)
+        }
+        .padding(12)
     }
 }
 
