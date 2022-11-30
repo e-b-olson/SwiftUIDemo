@@ -12,6 +12,21 @@ struct GaugeDemoView: View {
     var body: some View {
         Text("Placeholder View")
         Text("(GaugeDemoView)")
+
+        /*
+         Gauge is only available in iOS 16+
+         */
+        /*
+        Gauge(value: currentValue, in: minValue...maxValue) {
+            Text("Gauge Demo")
+        } currentValueLabel: {
+            Text("Current Value")
+        } minimumValueLabel: {
+            Text("Min")
+        } maximumValueLabel: {
+            Text("Max")
+        }
+         */
     }
 }
 
