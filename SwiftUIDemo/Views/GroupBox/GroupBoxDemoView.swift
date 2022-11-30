@@ -10,8 +10,14 @@ import SwiftUI
 struct GroupBoxDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(GroupBoxDemoView)")
+        GroupBox(content: {
+            Text("The GroupBox view is used to visually distinguish the wrapped views from the rest of your user interface.")
+                .padding(10)
+            Button("Okay", action: { })
+        }, label: {
+            Label("GroupBox Example", systemImage: "info.circle")
+                .foregroundColor(Color.blue)
+        })
     }
 }
 
