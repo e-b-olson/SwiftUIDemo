@@ -10,8 +10,10 @@ import SwiftUI
 struct FormDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(FormDemoView)")
+        Form {
+            // A Form is a container view, grouping controls
+            // used for data entry
+        }
     }
 }
 
