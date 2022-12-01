@@ -10,8 +10,9 @@ import SwiftUI
 struct LabelDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(LabelDemoView)")
+        Label("Labels have an icon and some text.", systemImage: "info.circle")
+            .foregroundColor(Color.blue)
+            .font(.title3)
     }
 }
 
