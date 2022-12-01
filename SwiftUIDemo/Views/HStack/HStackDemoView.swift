@@ -10,8 +10,15 @@ import SwiftUI
 struct HStackDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(HStackDemoView)")
+        HStack {
+            Text("HStacks let you...")
+                .padding(.leading, 10)
+            Spacer()
+            Divider()
+            Spacer()
+            Text("...align views horizontally.")
+                .padding(.trailing, 10)
+        }
     }
 }
 
