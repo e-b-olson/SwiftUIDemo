@@ -10,8 +10,10 @@ import SwiftUI
 struct ImageDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(ImageDemoView)")
+        Image(systemName: "photo.circle")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .padding(32)
     }
 }
 
