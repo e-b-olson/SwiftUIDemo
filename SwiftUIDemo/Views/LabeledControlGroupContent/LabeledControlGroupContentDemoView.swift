@@ -19,6 +19,8 @@ struct LabeledControlGroupContentDemoView: View {
                 .padding(16)
             Text("(You don’t create this type directly. SwiftUI creates it when you build a ControlGroup.)")
                 .padding(16)
+            Text("(LabeledControlGroupContent only available in iOS 16+)")
+                .padding(16)
         }
     }
 }
