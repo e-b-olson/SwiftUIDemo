@@ -10,8 +10,16 @@ import SwiftUI
 struct LabeledControlGroupContentDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(LabeledControlGroupContentDemoView)")
+        /*
+         This text is adapted from Apple's documentation
+         https://developer.apple.com/documentation/swiftui/labeledcontrolgroupcontent
+         */
+        VStack(alignment: .leading) {
+            Text("A view that represents the body of a control group with a specified label.")
+                .padding(16)
+            Text("(You don’t create this type directly. SwiftUI creates it when you build a ControlGroup.)")
+                .padding(16)
+        }
     }
 }
 
