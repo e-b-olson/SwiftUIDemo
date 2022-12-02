@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct MultiDatePickerDemoView: View {
+    @State private var dates: Set<DateComponents> = []
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(MultiDatePickerDemoView)")
+        if #available(iOS 16, *) {
+            MultiDatePicker("Select some dates", selection: $dates)
+        } else {
+            Text("Placeholder View")
+            Text("(MultiDatePicker only available in iOS 16+)")
+        }
     }
 }
 
