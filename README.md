@@ -90,9 +90,9 @@ ForEach
 ModifiedContent  
 [MultiDatePicker](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/MultiDatePicker)  
 [NavigationLink](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/NavigationLink)  
-NavigationSplitView  
-NavigationStack  
-NavigationView  
+[NavigationSplitView](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/NavigationSplitView)  
+[NavigationStack](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/NavigationStack)  
+[NavigationView](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/NavigationView)  
 OffsetShape  
 OutlineGroup  
 OutlineSubgroupChildren  
