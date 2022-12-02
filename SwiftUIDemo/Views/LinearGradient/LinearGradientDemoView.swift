@@ -10,8 +10,9 @@ import SwiftUI
 struct LinearGradientDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(LinearGradientDemoView)")
+        LinearGradient(colors: [.purple, .indigo, .cyan, .teal],
+                       startPoint: UnitPoint(x: 0, y: 0.2),
+                       endPoint: UnitPoint(x: 0.9, y: 1))
     }
 }
 
