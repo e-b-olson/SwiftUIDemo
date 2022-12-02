@@ -10,8 +10,16 @@ import SwiftUI
 struct MenuDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(MenuDemoView)")
+        Menu("Menu") {
+            Button("Cut", action: {})
+            Button("Copy", action: {})
+            Button("Paste", action: {})
+            Menu("Additional Options") {
+                Button("Save", action: {})
+                Button("Save as...", action: {})
+                Button("Close", action: {})
+            }
+        }
     }
 }
 
