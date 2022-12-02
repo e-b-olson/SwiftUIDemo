@@ -10,8 +10,12 @@ import SwiftUI
 struct ListDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(ListDemoView)")
+        List {
+            Text("Placeholder View")
+            Text("(ListDemoView)")
+            Spacer()
+            Text("This is list item 4")
+        }
     }
 }
 
