@@ -10,23 +10,23 @@ import XCTest
 final class SwiftUIDemoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
-case true
+        true
     }
 
     override func setUpWithError() throws {
-case continueAfterFailure = false
+        continueAfterFailure = false
     }
 
     func testLaunch() throws {
-case let app = XCUIApplication()
-case app.launch()
+        let app = XCUIApplication()
+        app.launch()
 
-case // Insert steps here to perform after app launch but before taking a screenshot,
-case // such as logging into a test account or navigating somewhere in the app
+        // Insert steps here to perform after app launch but before taking a screenshot,
+        // such as logging into a test account or navigating somewhere in the app
 
-case let attachment = XCTAttachment(screenshot: app.screenshot())
-case attachment.name = "Launch Screen"
-case attachment.lifetime = .keepAlways
-case add(attachment)
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = "Launch Screen"
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 }
