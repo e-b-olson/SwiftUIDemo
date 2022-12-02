@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LinkDemoView: View {
-    
+    private let url = URL(string: "https://developer.apple.com/documentation/swiftui/link")!
+
     var body: some View {
-        Text("Placeholder View")
-        Text("(LinkDemoView)")
+        Link("Link to Apple Documentation", destination: url)
     }
 }
 
