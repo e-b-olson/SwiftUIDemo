@@ -10,8 +10,17 @@ import SwiftUI
 struct MenuButtonDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(MenuButtonDemoView)")
+        /*
+         Note: MenuButton is only available in macOS.
+         AND it is now deprecated...so...
+         */
+        GroupBox {
+            Text("MenuButton is only available in macOS.  And it is now deprecated.")
+        } label: {
+            Label("MenuButton", systemImage: "info.circle")
+                .foregroundColor(Color.blue)
+        }
+        .padding(12)
     }
 }
 
