@@ -10,8 +10,12 @@ import SwiftUI
 struct RadialGradientDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(RadialGradientDemoView)")
+        RadialGradient(
+            colors: [.purple, .indigo, .blue, .cyan, .teal],
+            center: UnitPoint(x: 0.5, y: 0.5),
+            startRadius: 0.0,
+            endRadius: 500.0
+        )
     }
 }
 
