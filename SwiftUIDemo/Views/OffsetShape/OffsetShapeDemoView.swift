@@ -10,8 +10,18 @@ import SwiftUI
 struct OffsetShapeDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(OffsetShapeDemoView)")
+        /*
+         To be honest, I don't understand the benefit of this view.  An OffsetShape
+         equivalent can be created from a Shape view with an offset modifier.
+         
+         Perhaps the OffsetShape is more efficient?  Or maybe it is a relic from a
+         previous era of code...
+         */
+        VStack {
+            OffsetShape(shape: RoundedRectangle(cornerRadius: 12), offset: CGSize(width: 20, height: 20))
+            RoundedRectangle(cornerRadius: 12)
+                .offset(CGSize(width: 20, height: 20))
+        }
     }
 }
 
