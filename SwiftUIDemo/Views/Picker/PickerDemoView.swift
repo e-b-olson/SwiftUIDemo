@@ -7,11 +7,25 @@
 
 import SwiftUI
 
+enum Direction: String, CaseIterable, Identifiable {
+    case None
+    case North
+    case South
+    case East
+    case West
+
+    var id: Self { self }
+}
+
 struct PickerDemoView: View {
+    @State private var selectedDirection: Direction = .None
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(PickerDemoView)")
+        Picker("Direction", selection: $selectedDirection) {
+            ForEach(Direction.allCases) { direction in
+                Text(direction.rawValue)
+            }
+        }
     }
 }
 
