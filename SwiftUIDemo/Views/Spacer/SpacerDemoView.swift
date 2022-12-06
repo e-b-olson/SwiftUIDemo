@@ -10,8 +10,17 @@ import SwiftUI
 struct SpacerDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(SpacerDemoView)")
+        VStack {
+            Spacer()
+            
+            HStack {
+                Spacer()
+                Text("Spacers help align views!")
+                    .padding(.horizontal, 12)
+            }
+            
+            Spacer()
+        }
     }
 }
 
