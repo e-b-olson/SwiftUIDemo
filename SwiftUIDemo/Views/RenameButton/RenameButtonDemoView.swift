@@ -36,7 +36,7 @@ struct RenameButtonDemoView: View {
             
         } else {
             Text("Placeholder View")
-            Text("(RenameButtonDemoView)")
+            Text("(RenameButtonDemoView only available in iOS 16+)")
         }
     }
 }
