@@ -19,7 +19,7 @@ struct StepperDemoView: View {
          */
 
         Stepper {
-            Label("Select Color", image: "circle")
+            Label("Select Color", systemImage: "eyedropper.halffull")
         } onIncrement: {
             selectedColorIndex += 1
             selectedColorIndex = min(selectedColorIndex, colors.count - 1)
