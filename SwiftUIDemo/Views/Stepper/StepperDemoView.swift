@@ -8,10 +8,30 @@
 import SwiftUI
 
 struct StepperDemoView: View {
+    @State private var selectedColorIndex = 0
+    @State private var isEditing = false
+    private let colors: [Color] = [.red, .orange, .yellow, .green, .blue, .indigo, .purple]
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(StepperDemoView)")
+        /*
+         This code is adapted from Apple's documentation
+         https://developer.apple.com/documentation/swiftui/stepper
+         */
+
+        Stepper {
+            Label("Select Color", image: "circle")
+        } onIncrement: {
+            selectedColorIndex += 1
+            selectedColorIndex = min(selectedColorIndex, colors.count - 1)
+        } onDecrement: {
+            selectedColorIndex -= 1
+            selectedColorIndex = max(selectedColorIndex, 0)
+        } onEditingChanged: { value in
+            isEditing = value
+        }
+        .padding(32)
+        .background(colors[selectedColorIndex])
+        .opacity(isEditing ? 0.5 : 1.0)
     }
 }
 
