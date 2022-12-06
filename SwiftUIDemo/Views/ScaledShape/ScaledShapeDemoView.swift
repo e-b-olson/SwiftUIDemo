@@ -10,8 +10,24 @@ import SwiftUI
 struct ScaledShapeDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(ScaledShapeDemoView)")
+        /*
+         To be honest, I don't understand the benefit of this view.  A ScaledShape
+         equivalent can be created from a Shape view with a scaleEffect modifier.
+
+         Perhaps the ScaledShape is more efficient?  Or maybe it is a relic from a
+         previous era of code...
+         */
+
+        VStack {
+            Spacer()
+            ScaledShape(shape: Rectangle(), scale: CGSize(width: 0.5, height: 0.5))
+            
+            Spacer()
+            
+            Rectangle()
+                .scaleEffect(CGSize(width: 0.5, height: 0.5))
+            Spacer()
+        }
     }
 }
 
