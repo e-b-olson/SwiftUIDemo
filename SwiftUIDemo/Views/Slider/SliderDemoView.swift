@@ -8,10 +8,33 @@
 import SwiftUI
 
 struct SliderDemoView: View {
+    @State private var percent = 10.0
+    @State private var isEditing = false
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(SliderDemoView)")
+        /*
+         This code is adapted from Apple's documentation
+         https://developer.apple.com/documentation/swiftui/slider
+         */
+        VStack {
+            Slider(
+                value: $percent,
+                in: 0...100,
+                step: 0.5
+            ) {
+                Text("Speed")
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("100")
+            } onEditingChanged: { editing in
+                isEditing = editing
+            }
+            .padding(.horizontal, 32)
+            
+            Text("\(percent, specifier: "%.1f")")
+                .foregroundColor(isEditing ? .red : .blue)
+        }
     }
 }
 
