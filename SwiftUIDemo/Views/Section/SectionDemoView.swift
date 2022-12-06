@@ -10,8 +10,17 @@ import SwiftUI
 struct SectionDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(SectionDemoView)")
+        // Section can be used in views like List, Picker, and Form
+        List {
+            Section {
+                Text("This is in the first section")
+                Text("So is this...")
+            }
+            
+            Section("Second Section") {
+                Text("This is in the second section")
+            }
+        }
     }
 }
 
