@@ -10,8 +10,26 @@ import SwiftUI
 struct RotatedShapeDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(RotatedShapeDemoView)")
+        /*
+         To be honest, I don't understand the benefit of this view.  A RotatedShape
+         equivalent can be created from a Shape view with a rotate modifier.
+
+         Perhaps the RotatedShape is more efficient?  Or maybe it is a relic from a
+         previous era of code...
+         */
+
+        VStack {
+            Spacer()
+            RotatedShape(shape: Rectangle(), angle: Angle(degrees: 45))
+                .frame(width: 100, height: 100)
+            
+            Spacer()
+            
+            Rectangle()
+                .rotation(Angle(degrees: 45))
+                .frame(width: 100, height: 100)
+            Spacer()
+        }
     }
 }
 
