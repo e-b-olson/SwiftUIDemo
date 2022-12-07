@@ -28,7 +28,7 @@ struct PasteButtonDemoView: View {
             }
         } else {
             Text("Placeholder View")
-            Text("(PasteButtonDemoView only available in iOS 16+)")
+            Text("(PasteButton only available in iOS 16+)")
         }
     }
 }
