@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct TimelineViewDemoView: View {
+    /*
+     Apple Documentation
+     https://developer.apple.com/documentation/swiftui/timelineview
+     
+     A timeline view acts as a container with no appearance of its own.
+     Instead, it redraws the content it contains at scheduled points in
+     time. For example, you can update the face of an analog timer once
+     per second:
+     */
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(TimelineViewDemoView)")
+        TimelineView(.periodic(from: Date(), by: 1)) { context in
+            Text(context.date.description)
+                .padding(.horizontal, 32)
+                .font(.system(size: 32))
+        }
     }
 }
 
