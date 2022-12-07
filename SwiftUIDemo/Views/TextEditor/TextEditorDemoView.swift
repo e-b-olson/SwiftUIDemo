@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct TextEditorDemoView: View {
+    @State private var text: String = "A text editor view allows you to display and edit multiline, scrollable text in your app’s user interface."
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(TextEditorDemoView)")
+        TextEditor(text: $text)
     }
 }
 
