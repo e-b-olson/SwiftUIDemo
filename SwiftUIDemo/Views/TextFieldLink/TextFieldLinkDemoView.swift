@@ -11,7 +11,7 @@ struct TextFieldLinkDemoView: View {
     
     var body: some View {
         Text("Placeholder View")
-        Text("(TextFieldLinkDemoView)")
+        Text("(TextFieldLink is currently only available in watchOS 9+)")
     }
 }
 
