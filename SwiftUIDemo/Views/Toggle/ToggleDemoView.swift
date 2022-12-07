@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ToggleDemoView: View {
+    @State private var toggleState: Bool = false
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(ToggleDemoView)")
+        Toggle("Enable cool service?", isOn: $toggleState)
+            .padding(.horizontal, 32)
     }
 }
 
