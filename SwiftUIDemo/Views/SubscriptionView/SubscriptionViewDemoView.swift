@@ -8,10 +8,39 @@
 import SwiftUI
 
 struct SubscriptionViewDemoView: View {
+    @State private var screenshotTime: Date?
+    @State private var screenshotTaken = false
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(SubscriptionViewDemoView)")
+        /*
+         While you *can* create a SubscriptionView directly, it is generally
+         advisable to just use the `.onReceive` view modifier.
+         
+         Note: to simulate a screenshot in the simulator, go to:
+            Device -> Trigger Screenshot
+         */
+        VStack {
+            Spacer()
+            SubscriptionView(
+                content: Text("Screenshot taken at: \(screenshotTime?.description ?? "N/A")"),
+                publisher: NotificationCenter.default.publisher(
+                    for: UIApplication.userDidTakeScreenshotNotification),
+                action: { _ in
+                    screenshotTime = Date()
+                })
+            
+            Spacer()
+            
+            Text("Screenshot taken: \(screenshotTaken.description)")
+                .onReceive(
+                    NotificationCenter.default.publisher(
+                        for: UIApplication.userDidTakeScreenshotNotification
+                    )) { _ in
+                        screenshotTaken = true
+                    }
+            Spacer()
+        }
+        .padding(.horizontal, 32)
     }
 }
 
