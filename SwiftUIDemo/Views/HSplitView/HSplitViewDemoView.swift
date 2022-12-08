@@ -11,7 +11,7 @@ struct HSplitViewDemoView: View {
     
     var body: some View {
         /*
-         Note: HSplitView is only available in macOS (10.15+)
+         Note: HSplitView is only available in _macOS_ (10.15+)
          */
         GroupBox {
             Text("HSplitView is currently only available in macOS.")
