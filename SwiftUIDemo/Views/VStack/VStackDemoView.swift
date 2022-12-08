@@ -10,8 +10,15 @@ import SwiftUI
 struct VStackDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(VStackDemoView)")
+        VStack {
+            Spacer()
+            Text("VStacks")
+            Divider()
+            Text("allow you")
+            Text("to arrange views")
+            Text("vertically")
+            Spacer()
+        }
     }
 }
 
