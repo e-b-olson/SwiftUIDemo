@@ -28,11 +28,13 @@ struct TransformedShapeDemoView: View {
     }
     
     var body: some View {
-        TransformedShape(shape: Rectangle(), transform: CGAffineTransform(scaleX: 0.5, y: 0.5))
-            .padding(32)
-        
-        if #available(iOS 16, *) {
-            TransformedShape(shape: Rectangle(),transform: transform)
+        VStack {
+            TransformedShape(shape: Rectangle(), transform: CGAffineTransform(scaleX: 0.5, y: 0.5))
+                .padding(32)
+            
+            if #available(iOS 16, *) {
+                TransformedShape(shape: Rectangle(),transform: transform)
+            }
         }
     }
 }
