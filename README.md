@@ -53,11 +53,11 @@ Be sure to check out Apple's [SwiftUI View Fundamentals](https://developer.apple
 [ContainerRelativeShape](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/ContainerRelativeShape)  
 [ControlGroup](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/ControlGroup)  
 [DatePicker](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DatePicker)  
-DefaultDateProgressLabel  
-DefaultShareLinkLabel  
+[DefaultDateProgressLabel](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DefaultDateProgressLabel)  
+[DefaultShareLinkLabel](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DefaultShareLinkLabel)  
 [DisclosureGroup](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/DisclosureGroup)  
 [Divider](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Divider)  
-EditButton  
+[EditButton](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EditButton)  
 [EditableCollectionContent](https://github.com/e-b-olson/SwiftUIDemo/blob/main/SwiftUIDemo/Views/EditableCollectionContent/EditableCollectionContentDemoView.swift)  
 [Ellipse](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/Ellipse)  
 [EllipticalGradient](https://github.com/e-b-olson/SwiftUIDemo/tree/main/SwiftUIDemo/Views/EllipticalGradient)  
