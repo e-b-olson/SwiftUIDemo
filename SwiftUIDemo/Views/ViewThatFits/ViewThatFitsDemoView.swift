@@ -71,7 +71,7 @@ struct CustomResizableContainerView<Content: View>: View {
         
         Section{
             Slider(value: $dynamicWidth, in: 10...300, label: { Text("Width") })
-            Text("Adjust Width")
+            Text("Adjust Available Width")
         }
         .padding(.horizontal, 32)
     }
