@@ -10,8 +10,28 @@ import SwiftUI
 struct DefaultShareLinkLabelDemoView: View {
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(DefaultShareLinkLabelDemoView)")
+        /*
+         From the Apple Documentation:
+         
+         "You don’t use this type directly.
+         Instead, ShareLink uses it automatically depending on
+         how you create a share link."
+         
+         https://developer.apple.com/documentation/swiftui/defaultsharelinklabel
+         */
+        GroupBox {
+            VStack(alignment: .leading) {
+                Text("You don’t use this type directly.")
+                Divider()
+                    .padding(.horizontal, 32)
+                Text("Instead, ShareLink uses it automatically depending on how you create a share link.")
+            }
+        } label: {
+            Label("DefaultShareLinkLabel", systemImage: "info.circle")
+                .foregroundColor(Color.blue)
+                .padding(.bottom, 12)
+        }
+        .padding(12)
     }
 }
 
