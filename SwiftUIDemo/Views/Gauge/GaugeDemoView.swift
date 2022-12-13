@@ -8,25 +8,32 @@
 import SwiftUI
 
 struct GaugeDemoView: View {
+    @State private var currentValue = 25.0
+    private let minValue = 0.0
+    private let maxValue = 100.0
     
     var body: some View {
-        Text("Placeholder View")
-        Text("(GaugeDemoView)")
-
         /*
-         Gauge is only available in iOS 16+
+         This code is adapted from Apple's documentation
+         https://developer.apple.com/documentation/swiftui/gauge
+         
+         Note: PasteButton is currently only available in iOS 16.0+
          */
-        /*
-        Gauge(value: currentValue, in: minValue...maxValue) {
-            Text("Gauge Demo")
-        } currentValueLabel: {
-            Text("Current Value")
-        } minimumValueLabel: {
-            Text("Min")
-        } maximumValueLabel: {
-            Text("Max")
+        if #available(iOS 16, *) {
+            Gauge(value: currentValue, in: minValue...maxValue) {
+                Text("Gauge Demo")
+            } currentValueLabel: {
+                Text("Current Value")
+            } minimumValueLabel: {
+                Text("Min")
+            } maximumValueLabel: {
+                Text("Max")
+            }
+            .padding(.horizontal, 32)
+        } else {
+            Text("Placeholder View")
+            Text("(Gauge only available in iOS 16+)")
         }
-         */
     }
 }
 
